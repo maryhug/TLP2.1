@@ -10,4 +10,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+	// /formulario /mostrar
+	// /perfil - Datos span
+	// /index - "Hola Spring"
 }
