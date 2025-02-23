@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mostrar Usuario</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <h1>Datos del Usuario</h1>
+    <p><strong>Nombre:</strong> <span th:text="${usuario.nombre}"></span></p>
+    <p><strong>Apellido:</strong> <span th:text="${usuario.apellido}"></span></p>
+    <p><strong>Email:</strong> <span th:text="${usuario.email}"></span></p>
+
+    <!-- Botón de Atrás que redirige al formulario -->
+    <a href="/formulario">
+        <button type="button">Volver al formulario</button>
+    </a>
+</body>
+</html>
