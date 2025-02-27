@@ -6,11 +6,14 @@ import java.util.ArrayList;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.demo.model.Usuario;
 
-
 @Controller
+@RequestMapping("/app")
+//ruta base http://localhost:3030/app/listar
+
 public class IndexController {
 
     //http://localhost:3030/index
