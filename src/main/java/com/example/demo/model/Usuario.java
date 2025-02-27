@@ -1,25 +1,33 @@
 package com.example.demo.model;
 
 public class Usuario {
-    private String nombre;
-    private String apellido;
-    private String email;
+
+    private String Nombre, Apellido, email;
+
+    public Usuario() {
+    }
+
+    public Usuario(String nombre, String apellido, String email) {
+        Nombre = nombre;
+        Apellido = apellido;
+        this.email = email;
+    }
 
     // Getters y Setters
     public String getNombre() {
-        return nombre;
+        return Nombre;
     }
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        this.Nombre = nombre;
     }
 
     public String getApellido() {
-        return apellido;
+        return Apellido;
     }
 
     public void setApellido(String apellido) {
-        this.apellido = apellido;
+        this.Apellido = apellido;
     }
 
     public String getEmail() {
