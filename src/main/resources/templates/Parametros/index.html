@@ -7,7 +7,16 @@
 </head>
 <body>
     <h1 th:text="${Titulo}"></h1>
-    
+
+    <!--http://localhost:3030/params/-->
+    <ul>
+        <li>
+            <a th:href="@{/params/string(texto='Me fui')}">Mensaje</a>
+        </li>
+        <li>
+            <a th:href="@{/params/mix-params(texto=' ', num=3)}">Mensaje Y Numero</a>
+        </li>
+    </ul>
 
 
 </body>
