@@ -11,6 +11,7 @@ import com.example.demo.model.Usuario;
 @Controller
 public class usuarioController {
 
+    // http://localhost:3030/formulario
     @GetMapping("/formulario")
     public String mostrarFormulario(Model model) {
         model.addAttribute("usuario", new Usuario("", "", ""));
