@@ -31,6 +31,7 @@ public class EjemploParmsController {
 
     //http://localhost:3030/params/mix-params?texto=jajajjaja&num=7
     //El texto enviado es: MENSAJE POR DEFECTO y el numero es: 7
+    
     //http://localhost:3030/params/mix-params?saludo=jajajjaja&num=7
     //El texto enviado es: jajajjaja y el numero es: 7
     @GetMapping("/mix-params")

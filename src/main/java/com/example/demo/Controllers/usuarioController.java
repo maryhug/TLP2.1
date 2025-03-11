@@ -13,7 +13,7 @@ public class usuarioController {
 
     @GetMapping("/formulario")
     public String mostrarFormulario(Model model) {
-        model.addAttribute("usuario", new Usuario("Pepe", "Perez", "pp@gmail.com"));
+        model.addAttribute("usuario", new Usuario("", "", ""));
         return "formulario";
     }
 
