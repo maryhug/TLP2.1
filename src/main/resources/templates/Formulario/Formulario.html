@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulario de Usuario</title>
-    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+    <link rel="stylesheet" th:href="@{/css/formulario_css/styles.css}">
+
+
 </head>
 <body>
     <h1>Formulario de Usuario</h1>
-    <form action="/mostrar" method="post" th:object="${usuario}">
+    <form th:action="@{/mostrar}" method="post" th:object="${usuario}">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" th:field="*{nombre}" required/><br/>
 

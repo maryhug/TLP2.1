@@ -14,12 +14,12 @@ public class usuarioController {
     @GetMapping("/formulario")
     public String mostrarFormulario(Model model) {
         model.addAttribute("usuario", new Usuario("", "", ""));
-        return "formulario";
+        return "Formulario/Formulario";
     }
 
     @PostMapping("/mostrar")
     public String mostrarUsuario(@ModelAttribute Usuario usuario, Model model) {
         model.addAttribute("usuario", usuario);
-        return "mostrar";
+        return "Formulario/Mostrar";
     }
 }

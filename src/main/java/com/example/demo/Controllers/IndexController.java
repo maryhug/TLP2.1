@@ -1,7 +1,7 @@
 package com.example.demo.Controllers;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,26 +12,28 @@ import com.example.demo.model.Usuario;
 
 @Controller
 @RequestMapping("/app")
-//ruta base http://localhost:3030/app/listar
+//ruta base http://localhost:3030/app/...
 
 public class IndexController {
 
-    //http://localhost:3030/index
+    //  http://localhost:3030/app/home
     @GetMapping({"/", "/index", "/home"})
     public String index(Model model) {
         model.addAttribute("Titulo", "Hola Spring");      
-        return "index";
+        return "Listar_Perfil/index";
     }
 
+    //  http://localhost:3030/app/perfil
     @GetMapping("/perfil")
     public String perfil(Model model) {
         model.addAttribute("Titulo", "Perfil");
         model.addAttribute("Nombre", "Mary");       
         model.addAttribute("Apellido", "Duran");       
         model.addAttribute("Correo", "marydur@gmail.com");
-        return "perfil";
+        return "Listar_Perfil/perfil";
     }
     
+    //  http://localhost:3030/app/listar
     @GetMapping("/listar")
     public String listar(Model model) {
         
@@ -43,7 +45,7 @@ public class IndexController {
         model.addAttribute("usuarios",usuarios);
         model.addAttribute("titulo","listado de usuarios");
 
-        return "listar";
+        return "Listar_Perfil/listar";
     }
 
 }
